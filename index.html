@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <form action="">
+            <div id="SurveyForm">
+                <h2>Survey Form</h2>
+                <p>
+                    Feel free to answer the questions below based on your own experience and opinion. If you are not comfortable answering a particular question, please skip it by answering "No". Every response is very appreciated. Thank you for your time.
+                </p>
+            </div>
+            <div id="section">
+                <div id="section1">
+                    <div class="input-box">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" placeholder="9999999999" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="state">Where Do You Live?</label>
+                        <select id="state" name="state">
+                            <option id="select" value="">Select</option>
+                            <option value="AP">Andhra Pradesh</option>
+                            <option value="AR">Arunachal Pradesh</option>
+                            <option value="AS">Assam</option>
+                            <option value="BR">Bihar</option>
+                            <option value="CT">Chhattisgarh</option>
+                            <option value="GA">Goa</option>
+                            <option value="GJ">Gujarat</option>
+                            <option value="HR">Haryana</option>
+                            <option value="HP">Himachal Pradesh</option>
+                            <option value="JK">Jammu and Kashmir</option>
+                            <option value="JH">Jharkhand</option>
+                            <option value="KA">Karnataka</option>
+                            <option value="KL">Kerala</option>
+                            <option value="MP">Madhya Pradesh</option>
+                            <option value="MH">Maharashtra</option>
+                            <option value="MN">Manipur</option>
+                            <option value="ML">Meghalaya</option>
+                            <option value="MZ">Mizoram</option>
+                            <option value="NL">Nagaland</option>
+                            <option value="OR">Odisha</option>
+                            <option value="PB">Punjab</option>
+                            <option value="RJ">Rajasthan</option>
+                            <option value="SK">Sikkim</option>
+                            <option value="TN">Tamil Nadu</option>
+                            <option value="TG">Telangana</option>
+                            <option value="TR">Tripura</option>
+                            <option value="UP">Uttar Pradesh</option>
+                            <option value="UT">Uttarakhand</option>
+                            <option value="WB">West Bengal</option>
+                            <option value="AN">Andaman and Nicobar Islands</option>
+                            <option value="CH">Chandigarh</option>
+                            <option value="DN">Dadra and Nagar Haveli</option>
+                            <option value="DD">Daman and Diu</option>
+                            <option value="LD">Lakshadweep</option>
+                            <option value="DL">Delhi</option>
+                            <option value="PY">Puducherry</option>
+                            <option value="LA">Ladakh</option>
+                        </select>
+                    </div>
+                    <div id="age-group">
+                        <label id="age-label">Age</label>
+                        <div class="age-btns">
+                            <input type="radio" id="ageRange1" name="ageRange" value="15-20">
+                            <label for="ageRange1">15-20</label><br>
+                            <input type="radio" id="ageRange2" name="ageRange" value="21-30">
+                            <label for="ageRange2">21-30</label><br>
+                            <input type="radio" id="ageRange3" name="ageRange" value="31-40">
+                            <label for="ageRange3">31-40</label><br>
+                        </div>
+                        <div class="age-btns">
+                            <input type="radio" id="ageRange4" name="ageRange" value="41-50">
+                            <label for="ageRange4">41-50</label><br>
+                            <input type="radio" id="ageRange5" name="ageRange" value="Prefer not to say">
+                            <label for="ageRange5">Prefer not to say</label><br>
+                        </div>
+                    </div>
+                    <div id="level">
+                        <label for="coding-level">How would you rate your proficiency in coding</label>
+                        <label for="beginner">
+                            <input type="radio" id="beginner" name="codinglevel">Beginner
+                        </label>
+
+                        <label for="intermediate">
+                            <input type="radio" id="intermediate" name="codinglevel">Intermediate
+                        </label>
+
+                        <label for="advance">
+                            <input type="radio" id="advance" name="codinglevel">Advance
+                        </label>
+                    </div>
+                </div>
+                <div id="section2">
+                    <div id="coding-contest">
+                        <label>Have You Ever Appeared In Any Coding Contest?</label>
+                        <label for="contest-yes"><input type="radio" id="contest-yes" name="contest"> Yes</label>
+                        <label for="contest-no"><input type="radio" id="contest-no" name="contest"> No</label>
+                    </div>
+
+                    <div class="coding-passion">
+                        <label for="passion1">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+                        <textarea id="passion1" rows="4" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="coding-passion">
+                        <label for="passion2">What are some of the challenges you face while coding?</label>
+                        <textarea id="passion2" rows="4" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="coding-passion">
+                        <label for="passion3">Please list the data structures you have a strong understanding of.</label>
+                        <textarea id="passion3" rows="4" placeholder="Write here..."></textarea>
+                    </div>
+                    <div class="submit-container">
+                      <button type="submit">Submit</button>
+                  </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

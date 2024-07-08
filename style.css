@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #72b57d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#main {
+    max-height: 90%;
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+#SurveyForm {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#SurveyForm h2 {
+    color: #0c9320;
+    margin-bottom: 20px;
+}
+
+#section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+} 
+
+#section1, #section2 {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+}
+
+.input-box {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.input-box label {
+    margin-right: 5px;
+    font-weight: bold;
+    display: block; /* Make label block to ensure it occupies full width */
+    margin-bottom: 5px;
+}
+
+.input-box input, 
+.input-box select, 
+.coding-passion textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #e0e0e0;
+    color: #72b57d;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: #72b57d;
+}
+
+#state {
+    color: #72b57d;
+}
+
+#age-group {
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#age-label {
+    position: absolute;
+    top: -11px;
+    left: 13%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    font-weight: bold;
+}
+
+#level {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#level label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#level input {
+    margin-right: 10px;
+}
+
+#coding-contest {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#coding-contest label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.coding-passion {
+    margin: 10px 0;
+}
+
+.coding-passion label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coding-passion textarea {
+    margin-top: 10px;
+    resize: vertical;
+}
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-container button {
+    width: 100%;
+    background-color: #0c9320;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-container button:hover {
+    background-color: #096c1a;
+}
